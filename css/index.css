@@ -3,10 +3,14 @@
     --colorActive:#FEFEFE; --colorHover:#FFFFFF;  
 }
 body{
-    overflow:hidden;
+    overflow-x:hidden;
     margin: 0; padding: 0;
     font-family:'Noto Sans','Open Sans', Tahoma, sans-serif;
     font-size: 2vmin;font-weight: 300;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }
 p{text-align: justify;}
 #background{
@@ -29,8 +33,36 @@ p{text-align: justify;}
 .links{z-index: 2;}
 .linkTab{
     float: left;margin-left: 5px;margin-right: 5px;;
-    padding: 10px;border-radius: 5px;
+    padding: 10px;border-radius: 2px;
     background-color:#609497;
     color: white;
     cursor: pointer;
+}
+.quicklinks{
+    position: fixed;
+    top: 1%;left:2.5%; width: 95%;
+}
+.quickTab{
+    float: right;margin-left: 5px;margin-right: 5px;;
+    padding: 10px;border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+#home{float: left!important;}
+.ripple {
+    background-position: center;
+    transition: background 0.6s;
+}
+    .ripple:hover {
+        background:#69b1b4 radial-gradient(circle, transparent 1%,#69b1b4 1%) center/15000%;
+        border: 0px;
+    }
+    .ripple:active {
+        background-color:#2a8b91;
+        background-size: 100%;
+        transition: background 0s;
+        border: 0px;
+    }
+.check{
+    height: 200vh;background-color: #010030;
 }

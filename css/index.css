@@ -35,12 +35,13 @@ p{text-align: justify;}
     float: left;margin-left: 5px;margin-right: 5px;;
     padding: 10px;border-radius: 2px;
     background-color:#609497;
-    color: white;
+    color: white;font-size: 2.5vmin;
     cursor: pointer;
 }
 .quicklinks{
     position: fixed;
     top: 1%;left:2.5%; width: 95%;
+    font-size: 2.3vmin;
 }
 .quickTab{
     float: right;margin-left: 5px;margin-right: 5px;;

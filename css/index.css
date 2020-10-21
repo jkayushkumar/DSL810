@@ -64,6 +64,4 @@ p{text-align: justify;}
         transition: background 0s;
         border: 0px;
     }
-.check{
-    height: 200vh;background-color: #010030;
-}
+.check{ height: 200vh;background-color: #010030; }

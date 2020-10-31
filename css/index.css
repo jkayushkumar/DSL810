@@ -5,8 +5,11 @@
 body{
     overflow-x:hidden;
     margin: 0; padding: 0;
-    font-family:'Noto Sans','Open Sans', Tahoma, sans-serif;
-    font-size: 2vmin;font-weight: 300;
+    font-family: 'Montserrat','Raleway','Open Sans', Tahoma, sans-serif;
+    font-size: 2vmin;font-weight: 400;
+    color: var(--colorHover);
+    height: 300vh;
+    background-color:  #010030;
 }
 ::-webkit-scrollbar {
     width: 0px;
@@ -15,7 +18,7 @@ body{
 p{text-align: justify;}
 #background{
     position: absolute; z-index: 0;
-    height: 100vh;width: 100vw;    
+    height: 100vh;width: 100%;    
     background-image: url("../image/ceystalhorizon.png");
     background-size:100% 100%;
     background-repeat: no-repeat;
@@ -48,6 +51,7 @@ p{text-align: justify;}
     padding: 10px;border-radius: 2px;
     color: white;
     cursor: pointer;
+    z-index: 2;
 }
 #home{float: left!important;}
 .ripple {
@@ -64,4 +68,21 @@ p{text-align: justify;}
         transition: background 0s;
         border: 0px;
     }
-.check{ height: 200vh;background-color: #010030; }
+/* .overall{ height: 300vh;background-color: #010030; } */
+
+.assignContainer{
+    position: absolute;
+    width: 100%;top: 100vh;
+    
+}
+.projectContainer{
+    position: absolute;
+    width: 100%;top: 200vh;
+    
+}
+.containerhead{
+    position: absolute;
+    top: 10%;
+    left: 50%;transform: translateX(-50%);
+    font-size:2.8vmin;
+}

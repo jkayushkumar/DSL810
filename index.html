@@ -7,7 +7,9 @@
     <!-- <link rel="icon" href="images/logo/profile.PNG"> -->
     <title>Ayush : 2019DDS6004</title>
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap">
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap">
     <link rel="stylesheet" href="css/index.css">
     <script type="text/javascript" src="js/bundle/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="js/bundle/particles.min.js"></script>
@@ -23,23 +25,29 @@
     <div id="background" class="back">
         <div class="quicklinks">
             <div id="home" class="quickTab ripple" onclick="goToHome()">&nbsp;Home&nbsp;</div>
-            <div class="quickTab ripple">R&#xe9;sum&#xe9;</div>
+            <!-- <div class="quickTab ripple">R&#xe9;sum&#xe9;</div> -->
             <div class="quickTab ripple">Contact</div>
         </div>
         <div class="contentHolder">
             <div class="head">Ayush Kumar</div>
-            <div class="subHead">Designer|Developer</div>
+            <div class="subHead">Designer | Developer</div>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint porro commodi iure nisi dolore.
                 Doloremque, omnis velit. Repellat blanditiis, quibusdam ipsa reprehenderit, asperiores ipsum cupiditate
                 magnam dolorum laudantium ducimus enim!</p>
             <div class="links">
-                <div class="linkTab ripple">&nbsp;&nbsp;Assignments&nbsp;&nbsp;</div>
-                <div class="linkTab ripple">&nbsp;&nbsp;Project&nbsp;&nbsp;</div>
+                <div class="linkTab ripple" onclick="goTo(assignments)">&nbsp;&nbsp;Assignments&nbsp;&nbsp;</div>
+                <div class="linkTab ripple" onclick="goTo(project)">&nbsp;&nbsp;Project&nbsp;&nbsp;</div>
             </div>
         </div>
     </div>
     <script type="text/javascript" src="js/back.js"></script>
-    <div class="check"></div>
+    <!-- <div class="overall"></div> -->
+    <div id="assignments" class="assignContainer">
+        <div class="containerhead">Assignments</div>
+    </div>
+    <div id="project" class="projectContainer">
+        <div class="containerhead">Project</div>
+    </div>
 </body>
 
 </html>

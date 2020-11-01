@@ -45,13 +45,13 @@ p{text-align: justify;}
     position: fixed;
     top: 1%;left:2.5%; width: 95%;
     font-size: 2.3vmin;
+    z-index: 2;
 }
 .quickTab{
     float: right;margin-left: 5px;margin-right: 5px;;
     padding: 10px;border-radius: 2px;
     color: white;
     cursor: pointer;
-    z-index: 2;
 }
 #home{float: left!important;}
 .ripple {
@@ -73,13 +73,16 @@ p{text-align: justify;}
 .assignContainer{
     position: absolute;
     width: 100%;top: 100vh;
-    
+    height: 100vh;
+    z-index: -1;
 }
 .projectContainer{
     position: absolute;
     width: 100%;top: 200vh;
-    
+    height: 100vh;
+    z-index: -1;
 }
+
 .containerhead{
     position: absolute;
     top: 10%;

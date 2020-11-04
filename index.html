@@ -26,14 +26,14 @@
         <div class="quicklinks links">
             <div id="home" class="quickTab ripple" onclick="goToHome()">&nbsp;Home&nbsp;</div>
             <!-- <div class="quickTab ripple">R&#xe9;sum&#xe9;</div> -->
-            <div class="quickTab ripple">Contact</div>
+            <div class="quickTab ripple" onclick="showContactModal()">Contact</div>
         </div>
         <div class="contentHolder">
             <div class="head">Ayush Kumar</div>
             <div class="subHead">Designer | Developer</div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint porro commodi iure nisi dolore.
-                Doloremque, omnis velit. Repellat blanditiis, quibusdam ipsa reprehenderit, asperiores ipsum cupiditate
-                magnam dolorum laudantium ducimus enim!</p>
+            <p>Namaste ! I am a student of Master in Design at IIT Delhi.
+            Bachelor of Technology in Electronics and Communication Engineering.
+            Full Stack Web Developer with an exprience of 6 years in the Information Technology and services industry.</p>
             <div class="links">
                 <div class="linkTab ripple" onclick="goTo(assignments)">&nbsp;&nbsp;Assignments&nbsp;&nbsp;</div>
                 <div class="linkTab ripple" onclick="goTo(project)">&nbsp;&nbsp;Project&nbsp;&nbsp;</div>
@@ -47,6 +47,22 @@
     </div>
     <div id="project" class="projectContainer">
         <div class="containerhead">Project</div>
+    </div>
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <div class="contactHold">
+                <div class="contactRow" onclick=""><img src="image/outlook.png"
+                        width="30px">&nbsp;&nbsp;&nbsp;ayushmdes19@gmail.com</div><br />
+                <div class="contactRow" onclick=""><img src="image/call.png" width="30px">&nbsp;&nbsp;&nbsp;+91
+                    8297278638</div><br />
+                <div class="contactRow" onclick=" window.open('https://www.linkedin.com/in/jkayushkumar/','_blank')">
+                    <img src="image/linkedIn.png" width="30px">&nbsp;&nbsp;&nbsp;jkayushkumar</div><br />
+                <div class="contactRow" onclick=" window.open('https://www.behance.net/jkayushkumar','_blank')"><img
+                        src="image/behance.png" width="30px">&nbsp;&nbsp;&nbsp;jkayushkumar</div><br />                
+                <div class="contactRow" onclick=" window.open('https://www.instagram.com/ayushkumar.in/','_blank')"><img
+                        src="image/instagram.png" width="30px">&nbsp;&nbsp;&nbsp;ayushkumar.in</div><br />
+            </div>
+        </div>
     </div>
 </body>
 

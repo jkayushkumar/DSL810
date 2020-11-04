@@ -16,6 +16,7 @@ body{
     background: transparent;
 }
 p{text-align: justify;}
+p.headText{text-align: center;}
 #background{
     position: absolute; z-index: 0;
     height: 100vh;width: 100%;    
@@ -89,3 +90,34 @@ p{text-align: justify;}
     left: 50%;transform: translateX(-50%);
     font-size:2.8vmin;
 }
+
+.modal {
+    display: none; 
+    place-items: center;
+    position: fixed;z-index: 3; 
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow: none; 
+    background-color: #111111; 
+    background-color:#111111a8; 
+  }
+  .modal-content {
+    position: absolute;
+    background-color: var(--paper1);
+    padding: 5%;
+    border: 1px solid #888;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    background-color: var(--textLight);
+    color: var(--textDark);
+  } 
+  .contactHold{
+    padding: 1%;
+  }
+  .contactRow{
+    padding: 10px;
+    display: flex;place-items: center;
+    float: left;
+    cursor: pointer;
+  }

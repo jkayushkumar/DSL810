@@ -69,28 +69,83 @@ p.headText{text-align: center;}
         transition: background 0s;
         border: 0px;
     }
-/* .overall{ height: 300vh;background-color: #010030; } */
 
+/* Assignments --------------------- */
 .assignContainer{
     position: absolute;
-    width: 100%;top: 100vh;
+    width: 80%;top: 100vh;
     height: 100vh;
-    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
 }
+.innerAssnHolder{
+    position: absolute;
+    height: 100%;width: 95%;
+    left: 50%;top: 50%;
+    transform: translate(-50%,-50%);
+    animation: appear 1s ease-in;
+}
+
+/* Projects ----------------------- */
 .projectContainer{
     position: absolute;
     width: 100%;top: 200vh;
     height: 100vh;
     z-index: -1;
 }
-
+.innerPrjHolder{
+    position: absolute;
+    height: 100%;width: 95%;
+    left: 50%;top: 50%;
+    transform: translate(-50%,-50%);
+}
+/* Common -------------------------- */
 .containerhead{
     position: absolute;
     top: 10%;
     left: 50%;transform: translateX(-50%);
     font-size:2.8vmin;
 }
-
+#next{
+    position: absolute;top: 50%;right: 0;
+    color: #FFFFFF;font-size: 3vh;font-weight: 400;
+    cursor: pointer;
+}
+#prev{
+    position: absolute;top: 50%;left: 0;
+    color: #FFFFFF;font-size: 3vh;font-weight: 400;
+    cursor: pointer;
+}
+.assgnPrjHolder{
+    position: absolute;
+    top: 55%;left: 50%; transform: translate(-50%,-50%);
+    display: grid;place-items: center;
+    font-size: 2.5vmin;font-weight: 300;
+    height: 80%;width: 100%;
+}
+.innerIntro{
+    position: absolute;
+    height: 100%;width: 29%;
+    left: 0;
+}
+.innerDetail{
+    position: absolute;
+    height: 100%;width: 70%;
+    right: 0;
+}
+.detailsBtn {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2vh;
+    font-weight: 400;
+    color: var(--textLight);
+    background-color: #609497;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 2px;
+}
 .modal {
     display: none; 
     place-items: center;
@@ -100,8 +155,8 @@ p.headText{text-align: center;}
     overflow: none; 
     background-color: #111111; 
     background-color:#111111a8; 
-  }
-  .modal-content {
+}
+.modal-content {
     position: absolute;
     background-color: var(--paper1);
     padding: 5%;
@@ -111,13 +166,29 @@ p.headText{text-align: center;}
     place-items: center;
     background-color: var(--textLight);
     color: var(--textDark);
-  } 
-  .contactHold{
+} 
+.contactHold{
     padding: 1%;
-  }
-  .contactRow{
+}
+.contactRow{
     padding: 10px;
     display: flex;place-items: center;
     float: left;
     cursor: pointer;
-  }
+}
+.noDisplay{display: none;}
+.all-center{
+    display: grid;
+    place-items: center;
+}
+.y-center{
+    display: flex;
+    align-items: center;
+}
+.txt-center{text-align: center;}
+.brdr{border: 1px solid white;}
+
+@keyframes appear {
+    0% {opacity: 0;}    
+    100% {opacity: 1;}	
+}

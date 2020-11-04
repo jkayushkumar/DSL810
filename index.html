@@ -32,8 +32,9 @@
             <div class="head">Ayush Kumar</div>
             <div class="subHead">Designer | Developer</div>
             <p>Namaste ! I am a student of Master in Design at IIT Delhi.
-            Bachelor of Technology in Electronics and Communication Engineering.
-            Full Stack Web Developer with an exprience of 6 years in the Information Technology and services industry.</p>
+                Bachelor of Technology in Electronics and Communication Engineering.
+                Full Stack Web Developer with an exprience of 6 years in the Information Technology and services
+                industry.</p>
             <div class="links">
                 <div class="linkTab ripple" onclick="goTo(assignments)">&nbsp;&nbsp;Assignments&nbsp;&nbsp;</div>
                 <div class="linkTab ripple" onclick="goTo(project)">&nbsp;&nbsp;Project&nbsp;&nbsp;</div>
@@ -44,9 +45,33 @@
     <!-- <div class="overall"></div> -->
     <div id="assignments" class="assignContainer">
         <div class="containerhead">Assignments</div>
+        <div class="assgnPrjHolder">
+            <div class="innerAssnHolder">
+                <div class="innerIntro all-center">
+                    Assignment 1
+                    <div class="detailsBtn ripple">&nbsp;&nbsp;Details&nbsp;&nbsp;</div>
+                </div>
+                <div class="innerDetail brdr"></div>
+            </div>
+            <div class="innerAssnHolder noDisplay">
+                <div class="innerIntro all-center">
+                    Assignment 2
+                    <div class="detailsBtn ripple">&nbsp;&nbsp;Details&nbsp;&nbsp;</div>
+                </div>
+                <div class="innerDetail brdr"></div>
+            </div>
+        </div>
+        <div id="next" onclick="nextAssign(1)">&#10095;</div>
+        <div id="prev" onclick="nextAssign(-1)">&#10094;</div>
+    </div>
     </div>
     <div id="project" class="projectContainer">
         <div class="containerhead">Project</div>
+        <div class="assgnPrjHolder">
+            <div class="innerPrjHolder all-center">
+                <h4>Under Construction ...</h4>
+            </div>
+        </div>
     </div>
     <div id="contactModal" class="modal">
         <div class="modal-content">
@@ -58,7 +83,7 @@
                 <div class="contactRow" onclick=" window.open('https://www.linkedin.com/in/jkayushkumar/','_blank')">
                     <img src="image/linkedIn.png" width="30px">&nbsp;&nbsp;&nbsp;jkayushkumar</div><br />
                 <div class="contactRow" onclick=" window.open('https://www.behance.net/jkayushkumar','_blank')"><img
-                        src="image/behance.png" width="30px">&nbsp;&nbsp;&nbsp;jkayushkumar</div><br />                
+                        src="image/behance.png" width="30px">&nbsp;&nbsp;&nbsp;jkayushkumar</div><br />
                 <div class="contactRow" onclick=" window.open('https://www.instagram.com/ayushkumar.in/','_blank')"><img
                         src="image/instagram.png" width="30px">&nbsp;&nbsp;&nbsp;ayushkumar.in</div><br />
             </div>

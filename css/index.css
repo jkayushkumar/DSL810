@@ -366,6 +366,9 @@ p.headText {
     left: 30%!important;
     bottom: 10%!important;
 }
+a:visited{
+    color: white;
+}
 @keyframes appear {
     0% {
         opacity: 0;

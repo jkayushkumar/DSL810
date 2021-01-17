@@ -22,12 +22,13 @@
 </head>
 
 <body ontouchstart="">
+    <div class="quicklinks links">
+        <div id="home" class="quickTab ripple" onclick="goToHome()">&nbsp;Home&nbsp;</div>
+        <!-- <div class="quickTab ripple">R&#xe9;sum&#xe9;</div> -->
+        <div class="quickTab ripple" onclick="showContactModal()">Contact</div>
+    </div>
     <div id="background" class="back">
-        <div class="quicklinks links">
-            <div id="home" class="quickTab ripple" onclick="goToHome()">&nbsp;Home&nbsp;</div>
-            <!-- <div class="quickTab ripple">R&#xe9;sum&#xe9;</div> -->
-            <div class="quickTab ripple" onclick="showContactModal()">Contact</div>
-        </div>
+
         <div class="contentHolder">
             <div class="head">Ayush Kumar</div>
             <div class="subHead">Designer | Developer</div>
@@ -49,30 +50,128 @@
             <div class="innerAssnHolder">
                 <div class="innerIntro all-center">
                     <span class="innerIntroHead">Assignment 1 : Project Proposal</span>
-                    <div class="detailsBtn ripple">&nbsp;&nbsp;Details&nbsp;&nbsp;</div>
+                    <div class="innerDesc">
+                        <p>Project Title :</p>
+                        <p>Real Time Thermocouple Data Driven Fatigue Life Evaluation of Coke Drum</p>
+                        <br />
+                        <p>Team :</p>
+                        <p>Balaji Srinivasan - DDZ208073</p>
+                        <p>Ayush Kumar - DDS196004</p>
+                        <br />
+                        <p>Skills Involved :</p>
+                        <ul>
+                            <li>Design thinking</li>
+                            <li>Data preprocessing</li>
+                            <li>Data visualisation</li>
+                            <li>Machine learning</li>
+                        </ul>
+                        <br />
+                    </div>
+                    <div class="detailsBtn ripple" onclick="showDetailsModal(1)">&nbsp;&nbsp;Details&nbsp;&nbsp;</div>
                 </div>
-                <div class="innerDetail brdr"></div>
+                <fieldset class="innerDetail brdr">
+                    <legend>&nbsp;&nbsp;Overview&nbsp;&nbsp;</legend>
+                    <img src="./image/BackgroundPapercut.jpg" class="cokeDrumImg">
+                    <div id="cokeDetails">
+                        <p>A Coke Drum is a type of pressure vessel that uses heat and pressure to refine complex
+                            hydrocarbons into lighter, more useful, products, such as gasoline, diesel, and jet fuel.
+                            Coke drums are an integral part of coker units and serve as the final step in the cracking
+                            process.
+                        </p>
+                        <p>Thermal cracking process involves following a cycle of increase and decrease of
+                            drum temperature. The expected life of coke drum is about 10 year following the
+                            ideal operating process temperature cycle.
+                        </p>
+                        <p>Due to the uncertainties in operation procedure like, rise in
+                            supply-demand,
+                            poor quality batch of Crude, inefficient performance of ancillary equipment
+                            in process line, the drum starts to deteriorate earlier
+                            than the expected time. Stopping cracking process and evaluation of coke drum is very
+                            expensive
+                            and requires both time and resources.
+                        </p>
+                        <p>Objective :</p>
+                        <ul>
+                            <li>Collection of minute wise thermocouple cycle data</li>
+                            <li>Data preprocessing, cleaning, and filtering</li>
+                            <li>Detailed study of cyclic data with actual operation process steps</li>
+                            <li>Statistical visualisation and comparison of individual process steps with respective
+                                period of operations</li>
+                            <li>Evaluation of critical affected parameters</li>
+                            <li>Fatigue life evaluation with obtained parameters</li>
+                        </ul>
+                    </div>
+                </fieldset>
             </div>
+
             <div class="innerAssnHolder noDisplay">
                 <div class="innerIntro  all-center">
                     <span class="innerIntroHead">Assignment 2 : Website Development</span>
-                    <div class="detailsBtn ripple">&nbsp;&nbsp;Details&nbsp;&nbsp;</div>
+                    <div class="detailsBtn ripple" onclick="showDetailsModal(2)">&nbsp;&nbsp;Details&nbsp;&nbsp;</div>
                 </div>
-                <div class="innerDetail brdr"></div>
+                <fieldset class="innerDetail brdr">
+                    <legend>&nbsp;&nbsp;Overview&nbsp;&nbsp;</legend>
+                    <img src="./image/ceystalhorizon.png" class="cokeDrumImg">
+                </fieldset>
             </div>
+
+            <div class="innerAssnHolder noDisplay">
+                <div class="innerIntro  all-center">
+                    <span class="innerIntroHead">Assignment 3 : Data Preprocessing and Visualization</span>
+                    <div class="detailsBtn ripple" onclick="showDetailsModal(3)">&nbsp;&nbsp;Details&nbsp;&nbsp;</div>
+                </div>
+                <fieldset class="innerDetail brdr">
+                    <legend>&nbsp;&nbsp;Overview&nbsp;&nbsp;</legend>
+                    <img src="./image/graph1_1.jpg" class="cokeDrumImg">
+                </fieldset>
+            </div>
+
+            <div class="innerAssnHolder noDisplay">
+                <div class="innerIntro  all-center">
+                    <span class="innerIntroHead">Assignment 4 : Statistical Methods in Design</span>
+                    <div class="detailsBtn ripple" onclick="showDetailsModal(4)">&nbsp;&nbsp;Details&nbsp;&nbsp;</div>
+                </div>
+                <fieldset class="innerDetail brdr">
+                    <legend>&nbsp;&nbsp;Overview&nbsp;&nbsp;</legend>
+                    <img src="./image/graph2_1.jpg" class="cokeDrumImg">
+                </fieldset>
+            </div>
+
+            <div class="innerAssnHolder noDisplay">
+                <div class="innerIntro  all-center">
+                    <span class="innerIntroHead">Assignment 5 : Machine Learning</span>
+                    <div class="detailsBtn ripple" onclick="showDetailsModal(5)">&nbsp;&nbsp;Details&nbsp;&nbsp;</div>
+                </div>
+                <fieldset class="innerDetail brdr">
+                    <legend>&nbsp;&nbsp;Overview&nbsp;&nbsp;</legend>
+                    <img src="./image/graph3.JPG" class="cokeDrumImg">
+                </fieldset>
+            </div>
+
         </div>
-        <div id="next" onclick="nextAssign(1)">&#10095;</div>
-        <div id="prev" onclick="nextAssign(-1)">&#10094;</div>
+        <div class="next" onclick="nextAssign(1)">&#10095;</div>
+        <div class="prev" onclick="nextAssign(-1)">&#10094;</div>
     </div>
     </div>
+
+
     <div id="project" class="projectContainer">
         <div class="containerhead">Project</div>
         <div class="assgnPrjHolder">
-            <div class="innerPrjHolder all-center">
-                <h4>Under Construction ...</h4>
+            <div class="innerPrjHolder">
+                <div id="project1" class="all-center">
+                    <h4>Interim Project ...</h4>
+                </div>
+                <div id="project2" class="all-center noDisplay">
+                    <h4>Final Project ...</h4>
+                </div>
+                <div class="next" onclick="toggleProject()">&#10095;</div>
+                <div class="prev" onclick="toggleProject()">&#10094;</div>
             </div>
         </div>
     </div>
+
+
     <div id="contactModal" class="modal">
         <div class="modal-content">
             <div class="contactHold">
@@ -81,12 +180,54 @@
                 <div class="contactRow" onclick=""><img src="image/call.png" width="30px">&nbsp;&nbsp;&nbsp;+91
                     8297278638</div><br />
                 <div class="contactRow" onclick=" window.open('https://www.linkedin.com/in/jkayushkumar/','_blank')">
-                    <img src="image/linkedIn.png" width="30px">&nbsp;&nbsp;&nbsp;jkayushkumar</div><br />
+                    <img src="image/linkedIn.png" width="30px">&nbsp;&nbsp;&nbsp;jkayushkumar
+                </div><br />
                 <div class="contactRow" onclick=" window.open('https://www.behance.net/jkayushkumar','_blank')"><img
                         src="image/behance.png" width="30px">&nbsp;&nbsp;&nbsp;jkayushkumar</div><br />
                 <div class="contactRow" onclick=" window.open('https://www.instagram.com/ayushkumar.in/','_blank')"><img
                         src="image/instagram.png" width="30px">&nbsp;&nbsp;&nbsp;ayushkumar.in</div><br />
             </div>
+        </div>
+    </div>
+
+    <div id="assgn1Modal" class="modal">
+        <div class="modal-content noPadding">
+            <iframe class="modalAssgn" src="documents/ProjectProposal.pdf#view=FitH" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <div id="assgn2Modal" class="modal">
+        <div class="modal-content">
+            Assgn 2
+        </div>
+    </div>
+
+    <div id="assgn3Modal" class="modal">
+        <div class="modal-content">
+            Assgn 3
+        </div>
+    </div>
+
+    <div id="assgn4Modal" class="modal">
+        <div class="modal-content">
+            Assgn 4
+        </div>
+    </div>
+
+    <div id="assgn5Modal" class="modal">
+        <div class="modal-content">
+            Assgn 5
+        </div>
+    </div>
+
+    <div id="prj1Modal" class="modal">
+        <div class="modal-content">
+
+        </div>
+    </div>
+    <div id="prj2Modal" class="modal">
+        <div class="modal-content">
+
         </div>
     </div>
 </body>

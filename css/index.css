@@ -327,7 +327,7 @@ p.headText {
     z-index: -1;
 }
 
-#cokeDetails {
+.cokeDetails {
     position: absolute;
     left: 50%;
     top: 50%;

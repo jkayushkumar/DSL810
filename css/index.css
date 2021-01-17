@@ -282,9 +282,10 @@ p.headText {
     color: var(--textDark);
 }
 
-.noPadding{
+.noPadding {
     padding: 0!important;
 }
+
 .contactHold {
     padding: 1%;
 }
@@ -340,9 +341,30 @@ p.headText {
     /* -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: black; */
 }
-.modalAssgn{
+
+.modalAssgn {
     border: 0;
-    height: 90vh;width: 70vw;
+    height: 90vh;
+    width: 70vw;
+}
+
+.projectVideo {
+    position: absolute;
+    width: 45%;
+    right: 5%;
+    bottom: 10%;
+}
+.prjDesc{
+    position: absolute;
+    width: 40%;
+    left: 5%;
+    bottom: 10%;
+    font-size: 16px;
+    padding: 1%;
+}
+.prjBtn{
+    left: 30%!important;
+    bottom: 10%!important;
 }
 @keyframes appear {
     0% {

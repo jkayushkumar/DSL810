@@ -25,10 +25,10 @@ function showDetailsModal(modalNo) {
             document.getElementById("assgn5Modal").style.display = "grid";
             break;
         case 6:
-            document.getElementById("assgn6Modal").style.display = "grid";
+            document.getElementById("prj1Modal").style.display = "grid";
             break;
         case 7:
-            document.getElementById("assgn7Modal").style.display = "grid";
+            document.getElementById("prj2Modal").style.display = "grid";
             break;
     }
 }
@@ -51,6 +51,12 @@ window.onclick = function (event) {
     }
     if (event.target == document.getElementById("assgn5Modal")) {
         document.getElementById("assgn5Modal").style.display = "none";
+    }
+    if (event.target == document.getElementById("prj1Modal")) {
+        document.getElementById("prj1Modal").style.display = "none";
+    }
+    if (event.target == document.getElementById("prj2Modal")) {
+        document.getElementById("prj2Modal").style.display = "none";
     }
 }
 

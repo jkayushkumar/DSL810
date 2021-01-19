@@ -366,6 +366,9 @@ p.headText {
     left: 30%!important;
     bottom: 10%!important;
 }
+.dark{
+    color: #3b3b3b;
+}
 a:visited{
     color: white;
 }
